@@ -28,7 +28,7 @@ if [[ "$INSTALL_FLUX" == "1" ]]; then
 		--owner="$GITHUB_USER" \
 		--repository="$GITHUB_REPO" \
 		--branch=main \
-		--path=./clusters/kind \
+		--path=./clusters/"$KIND_CLUSTER_NAME" \
 		--components-extra=image-reflector-controller,image-automation-controller \
 		--personal
 fi
